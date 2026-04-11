@@ -136,3 +136,24 @@ footer {
         transform: translateX(-50%);
     }
 }
+/* This goes at the bottom of your CSS */
+.spotify-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; /* This makes it a nice "mini" size */
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); /* Red glow to match your theme */
+    border-radius: 12px;
+}
+
+/* On small screens, we move it to the center so it doesn't cover text */
+@media (max-width: 800px) {
+    .spotify-container {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        margin-top: 40px;
+    }
+}
